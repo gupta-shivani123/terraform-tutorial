@@ -5,11 +5,11 @@ resource "aws_instance" "shivani-demo-ec2" {
 }
 
 
-resource "aws_eip" "lb" {
+resource "aws_eip" "lbdemo" {
   vpc      = true
 }
 
 resource "aws_epi_association" "eip_asso"{
     intance_id= "aws_instance.shivani-demo-ec2.id"
-    allocation_id="aws_eip.lb"
+    allocation_id="aws_eip.lbdemo"
 }
