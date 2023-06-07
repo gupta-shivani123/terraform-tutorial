@@ -1,6 +1,4 @@
-provider "aws"{
-region = "us-east-1"
-}
+
 
 resource "aws_eip" "lb"{ 
 vpc = true
@@ -12,6 +10,6 @@ value = aws_eip.lb
 resource "aws_s3_bucket" "mys3" {
 bucket = "shivi-first-demo-s3"
 }
-output ""mybucket"{
+output ="mybucket"{
 value = aws_s3_bucket.mys3
 }

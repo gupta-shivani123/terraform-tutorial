@@ -1,7 +1,3 @@
-provider "aws" {
-  region     = "us-east-1"
-  
-}
 
 resource "aws_instance" "shivani-demo-ec2" {
     ami = "ami-00c39f71452c08778"
